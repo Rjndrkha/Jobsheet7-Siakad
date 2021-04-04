@@ -33,6 +33,8 @@ class StudentController extends Controller
             'Name' => 'required',
             'Class' => 'required',
             'Major' => 'required',
+            'Address' => 'required',
+            'DateOfBirth' => 'required',
         ]);
         // eloquent function to add data
         Student::create($request->all());
@@ -60,6 +62,8 @@ class StudentController extends Controller
             'Name' => 'required',
             'Class' => 'required',
             'Major' => 'required',
+            'Address' => 'required',
+            'DateOfBirth' => 'required',
         ]);
         //Eloquent function to update the data
         Student::find($Nim)->update($request->all());

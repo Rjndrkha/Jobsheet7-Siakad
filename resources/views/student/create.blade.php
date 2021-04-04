@@ -38,6 +38,15 @@
                         <label for="Major">Major</label>
                         <input type="Major" name="Major" class="form-control" id="Major" ariadescribedby="Major">
                     </div>
+                    <div class="form-group">
+                        <label for="Address">Address</label>
+                        <input type="Address" name="Alamat" class="form-control" id="Address" value="{{ $Student->Address }}" ariadescribedby="Address" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Date Of Birth">Date Of Birth</label>
+                        <input type="Date" name="Date Of Birth" class="form-control" id="DateOfBirth" value="{{ $Student->DateOfBirth }}" ariadescribedby="DateOfBirth" >
+                    </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
