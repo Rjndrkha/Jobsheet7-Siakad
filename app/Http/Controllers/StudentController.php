@@ -17,9 +17,9 @@ class StudentController extends Controller
     {
         // the eloquent function to displays data
         $student = $student = DB::table('student')->get(); // Mengambil semua isi tabel
-        //$posts = Student::orderBy('Nim', 'desc')->paginate(6);
+        $posts = Student::orderBy('Nim', 'desc')->paginate(6);
         return view('student.index', compact('student'));
-        //with('i', (request()->input('page', 1) - 1) * 5);
+        with('i', (request()->input('page', 1) - 1) * 5);
     }
     public function create()
     {
